@@ -81,14 +81,14 @@ Follow these instructions to get a copy of the project up and running on your lo
     ```bash
     npm run dev
     ```
-    The backend will be running on `http://localhost:8000`.
+   
 
 ### Frontend Setup
 
 1.  **Clone the frontend repository (if it's separate):**
     ```bash
-    # git clone [frontend-repo-url](https://github.com/Vikrampoonia/renu-platform-frontend.git)
-    # cd renu-platform-frontend
+   git clone [https://github.com/Vikrampoonia/renu-platform-frontend.git](https://github.com/Vikrampoonia/renu-platform-frontend.git)
+    cd renu-platform-frontend
     ```
 2.  **Install dependencies:**
     ```bash
