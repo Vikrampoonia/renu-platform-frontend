@@ -36,8 +36,11 @@ const ShowSchoolsPage = () => {
       try {
         setIsLoading(true);
         // Ensure you have this environment variable set in a .env.local file
-        const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL;
-        const response = await fetch(`${backendUrl}/schools`);
+       app.use(cors({
+  origin: "*", // allow any origin
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type", "Authorization"]
+}));
         
         if (!response.ok) {
           throw new Error('Failed to fetch schools');
