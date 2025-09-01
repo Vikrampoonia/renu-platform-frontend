@@ -70,12 +70,12 @@ Follow these instructions to get a copy of the project up and running on your lo
     npm install
     ```
 4.  **Set up the database:**
-    * Create a MySQL database named `school_db`.
-    * Run the `init.sql` script to create the `schools` table.
+    * Create a MySQL database and table inside it schools
+    
 5.  **Create a `.env` file:**
     * Create a `.env` file in the root of the backend folder and add your database connection string:
         ```env
-        DATABASE_URL="mysql://YOUR_USER:YOUR_PASSWORD@127.0.0.1:3306/school_db"
+        DATABASE_URL=your connection string
         ```
 6.  **Start the backend server:**
     ```bash
@@ -87,8 +87,8 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 1.  **Clone the frontend repository (if it's separate):**
     ```bash
-    # git clone <your-frontend-repo-url>
-    # cd <your-frontend-folder>
+    # git clone [frontend-repo-url](https://github.com/Vikrampoonia/renu-platform-frontend.git)
+    # cd renu-platform-frontend
     ```
 2.  **Install dependencies:**
     ```bash
