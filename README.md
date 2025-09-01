@@ -1,36 +1,127 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## I use free sql for host mysql it give 5MB storage for free.
 
-## Getting Started
+# School Management Mini-Project
 
-First, run the development server:
+A full-stack web application for managing school data, featuring a Next.js frontend and an Express.js backend. Users can add new schools with image uploads, view a list of all schools, and search for specific schools.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Live URLs
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+* **Frontend (Next.js):** [Visit the Live Application](https://your-frontend-url.vercel.app)
+* **Backend (Express.js):** [renu-platform-backend.vercel.app](https://renu-platform-backend.vercel.app)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📦 Repositories
 
-## Learn More
+* **Backend GitHub Repo:** [https://github.com/Vikrampoonia/renu-platform-backend.git](https://github.com/Vikrampoonia/renu-platform-backend.git)
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ✨ Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* **Add Schools:** A user-friendly form to add new schools to the database, including image uploads.
+* **View Schools:** Displays all registered schools in a clean, card-based layout.
+* **Search Functionality:** A real-time search bar to filter schools by name, city, state, email, or contact number.
+* **Pagination:** A simple and effective pagination system to handle a large number of schools.
+* **Responsive Design:** The application is fully responsive and works on both desktop and mobile devices.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🛠️ Tech Stack
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Frontend
+
+* **Framework:** Next.js
+* **Language:** TypeScript
+* **Styling:** Tailwind CSS
+* **Form Management:** React Hook Form
+* **Validation:** Zod
+
+### Backend
+
+* **Framework:** Express.js
+* **Language:** JavaScript (Node.js)
+* **Database:** MySQL
+* **File Uploads:** Multer
+
+---
+
+## 🏁 Getting Started
+
+Follow these instructions to get a copy of the project up and running on your local machine.
+
+### Prerequisites
+
+* Node.js (v16 or higher)
+* MySQL
+
+### Backend Setup
+
+1.  **Clone the backend repository:**
+    ```bash
+    git clone [https://github.com/Vikrampoonia/renu-platform-backend.git](https://github.com/Vikrampoonia/renu-platform-backend.git)
+    ```
+2.  **Navigate to the backend directory:**
+    ```bash
+    cd renu-platform-backend
+    ```
+3.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+4.  **Set up the database:**
+    * Create a MySQL database and table inside it schools
+    
+5.  **Create a `.env` file:**
+    * Create a `.env` file in the root of the backend folder and add your database connection string:
+        ```env
+        DATABASE_URL=your connection string
+        ```
+6.  **Start the backend server:**
+    ```bash
+    npm run dev
+    ```
+   
+
+### Frontend Setup
+
+1.  **Clone the frontend repository :**
+    ```bash
+    git clone [https://github.com/Vikrampoonia/renu-platform-frontend.git](https://github.com/Vikrampoonia/renu-platform-frontend.git)
+    cd renu-platform-frontend
+    ```
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+3.  **Start the frontend development server:**
+    ```bash
+    npm run dev
+    ```
+    The frontend will be running on `http://localhost:3000`.
+
+---
+
+## 📝 API Endpoints
+
+The backend exposes the following API endpoints:
+
+### Get All Schools
+
+* **Method:** `GET`
+* **URL:** `/schools`
+* **Description:** Fetches a list of all schools.
+
+### Add a New School
+
+* **Method:** `POST`
+* **URL:** `/create` (or your chosen endpoint)
+* **Description:** Adds a new school to the database. Expects a `multipart/form-data` payload.
+
+---
+
+## ☁️ Deployment
+
+* The **frontend** is deployed on **Vercel**.
+* The **backend** is deployed on **Vercel** as a serverless function.
+* The `vercel.json` file in the frontend repository handles the proxying of API requests to the live backend.
