@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/schools",
+      "destination": "https://renu-platform-backend.vercel.app/school"
+    },
+    {
+      "source": "/create",
+      "destination": "https://renu-platform-backend.vercel.app/create"
+    }
+  ]
+}
