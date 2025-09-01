@@ -85,10 +85,10 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 ### Frontend Setup
 
-1.  **Clone the frontend repository (if it's separate):**
+1.  **Clone the frontend repository :**
     ```bash
-   git clone [https://github.com/Vikrampoonia/renu-platform-frontend.git](https://github.com/Vikrampoonia/renu-platform-frontend.git)
-    cd renu-platform-frontend
+   # git clone [https://github.com/Vikrampoonia/renu-platform-frontend.git](https://github.com/Vikrampoonia/renu-platform-frontend.git)
+   # cd renu-platform-frontend
     ```
 2.  **Install dependencies:**
     ```bash
