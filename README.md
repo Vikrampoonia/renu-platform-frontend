@@ -1,4 +1,4 @@
-## I use free sql for host mysql it give 5MB storage for free.
+
 
 # School Management Mini-Project
 
@@ -8,7 +8,7 @@ A full-stack web application for managing school data, featuring a Next.js front
 
 ## 🚀 Live URLs
 
-* **Frontend (Next.js):** [Visit the Live Application](https://your-frontend-url.vercel.app)
+* **Frontend (Next.js):** [Visit the Live Application](https://renu-platform-frontend.vercel.app)
 * **Backend (Express.js):** [renu-platform-backend.vercel.app](https://renu-platform-backend.vercel.app)
 
 ## 📦 Repositories
